@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mentions légales — Christophe Brulin</title>
+<meta name="description" content="Mentions légales du site christophebrulin.fr">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0f1a2e;
+  --ink-soft: #1a2942;
+  --paper: #faf7f2;
+  --paper-warm: #f3ede3;
+  --copper: #b4713a;
+  --copper-light: #d4925b;
+  --gold: #c9a063;
+  --line: rgba(15, 26, 46, 0.12);
+  --text: #0f1a2e;
+  --text-muted: #556880;
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter Tight', system-ui, sans-serif;
+  --max: 820px;
+  --gutter: clamp(20px, 4vw, 56px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--paper);
+}
+a { color: var(--copper); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+a:hover { border-bottom-color: var(--copper); }
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  font-variation-settings: "opsz" 144;
+}
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 300; line-height: 1.1; margin-bottom: 16px; }
+h2 { font-size: 1.5rem; font-weight: 500; margin-top: 48px; margin-bottom: 16px; padding-top: 32px; border-top: 1px solid var(--line); }
+h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+h3 { font-size: 1.1rem; font-weight: 500; margin-top: 24px; margin-bottom: 8px; }
+p { margin-bottom: 16px; color: var(--text-muted); }
+p strong { color: var(--ink); font-weight: 500; }
+ul { padding-left: 24px; margin-bottom: 16px; color: var(--text-muted); }
+li { margin-bottom: 6px; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+
+/* Nav */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250, 247, 242, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 18px var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+.logo:hover { border: none; }
+.logo-mark {
+  width: 28px;
+  height: 28px;
+}
+.back-link {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.back-link:hover { color: var(--copper); border: none; }
+
+/* Header */
+.page-header {
+  padding: clamp(60px, 10vw, 100px) 0 clamp(32px, 5vw, 48px);
+}
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--copper);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--copper);
+}
+.updated {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 32px;
+}
+
+/* Content */
+.content {
+  padding-bottom: clamp(60px, 10vw, 100px);
+}
+
+/* Footer */
+.footer {
+  background: var(--ink);
+  color: rgba(250, 247, 242, 0.65);
+  padding: 40px 0;
+  border-top: 1px solid rgba(250, 247, 242, 0.1);
+}
+.footer-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 0.86rem;
+}
+.footer-logo {
+  color: var(--paper);
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+.footer-logo:hover { border: none; }
+.footer-links { display: flex; gap: 24px; list-style: none; }
+.footer-links a { color: rgba(250, 247, 242, 0.65); border: none; }
+.footer-links a:hover { color: var(--copper-light); border: none; }
+
+@media (max-width: 640px) {
+  .footer-inner { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 16l4 4 8-8" stroke="#b4713a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      Christophe Brulin
+    </a>
+    <a href="index.html" class="back-link">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 7H1m0 0l5-5M1 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Retour à l'accueil
+    </a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <span class="eyebrow">Informations légales</span>
+    <h1>Mentions légales</h1>
+    <p class="updated">Dernière mise à jour : [DATE DE MISE EN LIGNE]</p>
+  </div>
+</header>
+
+<main class="content">
+  <div class="wrap">
+
+    <h2>Éditeur du site</h2>
+    <p>
+      Le présent site est édité par&nbsp;:
+    </p>
+    <p>
+      <strong>Christophe Brulin</strong><br>
+      [STATUT JURIDIQUE — ex. Entrepreneur individuel / EURL / SASU Christophe Brulin]<br>
+      [ADRESSE POSTALE COMPLÈTE]<br>
+      [CODE POSTAL] Lyon — France
+    </p>
+    <p>
+      <strong>Contact</strong>&nbsp;: <a href="mailto:contact@christophebrulin.fr">contact@christophebrulin.fr</a><br>
+      <strong>Téléphone</strong>&nbsp;: [NUMÉRO DE TÉLÉPHONE PROFESSIONNEL]
+    </p>
+    <p>
+      <strong>SIRET</strong>&nbsp;: [NUMÉRO SIRET]<br>
+      <strong>Numéro de TVA intracommunautaire</strong>&nbsp;: [NUMÉRO DE TVA OU MENTION "TVA NON APPLICABLE, ART. 293 B DU CGI" SI FRANCHISE EN BASE]<br>
+      <strong>Code APE / NAF</strong>&nbsp;: [CODE APE]
+    </p>
+
+    <h2>Directeur de la publication</h2>
+    <p>
+      Le directeur de la publication est <strong>Christophe Brulin</strong>, en qualité de responsable éditorial du site.
+    </p>
+
+    <h2>Hébergement</h2>
+    <p>
+      Le site est hébergé par&nbsp;:
+    </p>
+    <p>
+      <strong>[NOM DE L'HÉBERGEUR — ex. Netlify, Inc. / OVH SAS / Cloudflare]</strong><br>
+      [ADRESSE DE L'HÉBERGEUR]<br>
+      [SITE WEB DE L'HÉBERGEUR]
+    </p>
+
+    <h2>Activité professionnelle</h2>
+    <p>
+      Christophe Brulin exerce une activité de conseil en sécurité de l'information et conformité réglementaire (ISO 27001, RGPD, NIS2, DORA). Il intervient également en qualité d'auditeur mandaté par des organismes de certification accrédités pour conduire des audits ISO 27001 en tant que tierce partie indépendante.
+    </p>
+    <p>
+      La certification de responsable d'audit ISO 27001 a été délivrée par AFNOR Certification (certificat n°&nbsp;3008811, valide du 19/01/2026 au 19/01/2029), enregistrée au répertoire spécifique sous le titre "Conduire un audit tierce partie d'un système de management" (RS 5561).
+    </p>
+
+    <h2>Propriété intellectuelle</h2>
+    <p>
+      L'ensemble des contenus du site (textes, graphismes, logos, icônes, photographies, éléments visuels et leur mise en forme) est la propriété exclusive de Christophe Brulin, à l'exception des marques et logos de tiers mentionnés avec leur autorisation ou dans le respect du droit d'usage légal (notamment AFNOR, LRQA, ISO, références à des normes).
+    </p>
+    <p>
+      Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans autorisation écrite préalable.
+    </p>
+
+    <h2>Liens hypertextes</h2>
+    <p>
+      Le site peut contenir des liens vers des sites tiers. Christophe Brulin n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur politique de confidentialité ou leurs pratiques.
+    </p>
+
+    <h2>Responsabilité</h2>
+    <p>
+      Les informations diffusées sur ce site ont un caractère général et ne sauraient se substituer à un conseil professionnel personnalisé. Christophe Brulin s'efforce d'assurer l'exactitude et la mise à jour des informations publiées, sans toutefois garantir l'absence d'erreurs, d'omissions ou de modifications intervenues depuis leur publication.
+    </p>
+    <p>
+      L'accès au site peut être interrompu ponctuellement pour maintenance, mise à jour ou pour toute raison technique indépendante de notre volonté.
+    </p>
+
+    <h2>Droit applicable</h2>
+    <p>
+      Les présentes mentions légales sont régies par le droit français. En cas de litige, et à défaut de résolution amiable, compétence est attribuée aux tribunaux français.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Pour toute question relative au présent site ou à son contenu&nbsp;: <a href="mailto:contact@christophebrulin.fr">contact@christophebrulin.fr</a>
+    </p>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="15" stroke="#faf7f2" stroke-width="1.5"/>
+          <path d="M10 16l4 4 8-8" stroke="#d4925b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      Christophe Brulin
+    </a>
+    <div>© 2026 · Sécurité de l'information &amp; Conformité · Lyon, France</div>
+    <ul class="footer-links">
+      <li><a href="mentions-legales.html">Mentions légales</a></li>
+      <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

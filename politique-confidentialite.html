@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — Christophe Brulin</title>
+<meta name="description" content="Politique de confidentialité et traitement des données personnelles — christophebrulin.fr">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0f1a2e;
+  --ink-soft: #1a2942;
+  --paper: #faf7f2;
+  --paper-warm: #f3ede3;
+  --copper: #b4713a;
+  --copper-light: #d4925b;
+  --gold: #c9a063;
+  --line: rgba(15, 26, 46, 0.12);
+  --text: #0f1a2e;
+  --text-muted: #556880;
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter Tight', system-ui, sans-serif;
+  --max: 820px;
+  --gutter: clamp(20px, 4vw, 56px);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--paper);
+}
+a { color: var(--copper); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+a:hover { border-bottom-color: var(--copper); }
+
+h1, h2, h3 {
+  font-family: var(--serif);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  font-variation-settings: "opsz" 144;
+}
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 300; line-height: 1.1; margin-bottom: 16px; }
+h2 { font-size: 1.5rem; font-weight: 500; margin-top: 48px; margin-bottom: 16px; padding-top: 32px; border-top: 1px solid var(--line); }
+h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+h3 { font-size: 1.1rem; font-weight: 500; margin-top: 24px; margin-bottom: 8px; }
+p { margin-bottom: 16px; color: var(--text-muted); }
+p strong { color: var(--ink); font-weight: 500; }
+ul { padding-left: 24px; margin-bottom: 16px; color: var(--text-muted); }
+li { margin-bottom: 6px; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
+
+/* Nav */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250, 247, 242, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+}
+.nav-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 18px var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+.logo:hover { border: none; }
+.logo-mark {
+  width: 28px;
+  height: 28px;
+}
+.back-link {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.back-link:hover { color: var(--copper); border: none; }
+
+/* Header */
+.page-header {
+  padding: clamp(60px, 10vw, 100px) 0 clamp(32px, 5vw, 48px);
+}
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--copper);
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--copper);
+}
+.updated {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  margin-bottom: 32px;
+}
+
+/* Content */
+.content { padding-bottom: clamp(60px, 10vw, 100px); }
+
+/* Data table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0 24px;
+  font-size: 0.94rem;
+}
+.data-table th,
+.data-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.data-table th {
+  font-family: var(--serif);
+  font-weight: 500;
+  color: var(--ink);
+  background: var(--paper-warm);
+  font-size: 0.9rem;
+}
+.data-table td { color: var(--text-muted); }
+.data-table tr:last-child th,
+.data-table tr:last-child td { border-bottom: none; }
+
+/* Info box */
+.info-box {
+  background: var(--paper-warm);
+  border-left: 3px solid var(--copper);
+  padding: 20px 24px;
+  border-radius: 6px;
+  margin: 24px 0;
+}
+.info-box p:last-child { margin-bottom: 0; }
+
+/* Footer */
+.footer {
+  background: var(--ink);
+  color: rgba(250, 247, 242, 0.65);
+  padding: 40px 0;
+}
+.footer-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 0.86rem;
+}
+.footer-logo {
+  color: var(--paper);
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+.footer-logo:hover { border: none; }
+.footer-links { display: flex; gap: 24px; list-style: none; }
+.footer-links a { color: rgba(250, 247, 242, 0.65); border: none; }
+.footer-links a:hover { color: var(--copper-light); border: none; }
+
+@media (max-width: 640px) {
+  .footer-inner { flex-direction: column; text-align: center; }
+  .data-table { font-size: 0.88rem; }
+  .data-table th, .data-table td { padding: 10px 12px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M10 16l4 4 8-8" stroke="#b4713a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      Christophe Brulin
+    </a>
+    <a href="index.html" class="back-link">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M13 7H1m0 0l5-5M1 7l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Retour à l'accueil
+    </a>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="wrap">
+    <span class="eyebrow">Protection des données</span>
+    <h1>Politique de confidentialité</h1>
+    <p class="updated">Dernière mise à jour : [DATE DE MISE EN LIGNE]</p>
+  </div>
+</header>
+
+<main class="content">
+  <div class="wrap">
+
+    <h2>Préambule</h2>
+    <p>
+      La protection de vos données personnelles est une priorité. Cette politique vous informe de manière claire et transparente sur la manière dont vos données sont collectées, utilisées et protégées lorsque vous visitez le site <a href="https://christophebrulin.fr">christophebrulin.fr</a> ou lorsque vous me contactez dans le cadre d'une demande professionnelle.
+    </p>
+    <p>
+      La présente politique est conforme au Règlement général sur la protection des données (RGPD — Règlement UE 2016/679) et à la loi Informatique et Libertés modifiée.
+    </p>
+
+    <h2>Responsable du traitement</h2>
+    <p>
+      Le responsable du traitement des données personnelles collectées via ce site est&nbsp;:
+    </p>
+    <p>
+      <strong>Christophe Brulin</strong><br>
+      [ADRESSE POSTALE COMPLÈTE]<br>
+      [CODE POSTAL] Lyon — France<br>
+      Email&nbsp;: <a href="mailto:contact@christophebrulin.fr">contact@christophebrulin.fr</a>
+    </p>
+
+    <h2>Données collectées et finalités</h2>
+    <p>
+      Les données personnelles collectées sur ce site sont limitées à ce qui est strictement nécessaire pour répondre à vos demandes. Aucune donnée n'est collectée à votre insu, aucune donnée n'est vendue ni partagée à des fins commerciales.
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Type de données</th>
+          <th>Finalité</th>
+          <th>Base légale</th>
+          <th>Durée de conservation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nom, email, nom de l'entreprise, contexte de votre demande, échéance envisagée</td>
+          <td>Prise de rendez-vous via Calendly et préparation de l'échange</td>
+          <td>Consentement (formulaire de réservation)</td>
+          <td>3 ans après le dernier contact</td>
+        </tr>
+        <tr>
+          <td>Email et contenu de votre message</td>
+          <td>Réponse à une demande envoyée par email</td>
+          <td>Exécution de mesures précontractuelles à votre demande</td>
+          <td>3 ans après le dernier contact</td>
+        </tr>
+        <tr>
+          <td>Données de navigation (logs serveur)</td>
+          <td>Sécurité et bon fonctionnement du site</td>
+          <td>Intérêt légitime</td>
+          <td>12 mois maximum</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="info-box">
+      <p><strong>Aucune donnée sensible.</strong> Ce site ne collecte aucune donnée dite "sensible" au sens du RGPD (santé, origine, opinions politiques, appartenance syndicale, etc.).</p>
+    </div>
+
+    <h2>Cookies et traceurs</h2>
+    <p>
+      Ce site utilise uniquement des cookies et ressources strictement nécessaires à son fonctionnement. Aucun cookie publicitaire, aucun traceur de mesure d'audience non exempté n'est déposé sans votre consentement.
+    </p>
+
+    <h3>Ressources et services tiers utilisés</h3>
+    <ul>
+      <li><strong>Google Fonts</strong>&nbsp;: les polices de caractères du site (Fraunces, Inter Tight) sont chargées depuis les serveurs de Google. Cela implique la transmission de votre adresse IP à Google lors du chargement de la page.</li>
+      <li><strong>Calendly</strong>&nbsp;: lorsque vous cliquez sur "Prendre rendez-vous", un module édité par Calendly, LLC s'ouvre. Calendly peut déposer ses propres cookies et collecter des données dans les conditions décrites dans sa <a href="https://calendly.com/privacy" target="_blank" rel="noopener">politique de confidentialité</a>.</li>
+      <li><strong>[HÉBERGEUR — ex. Netlify]</strong>&nbsp;: l'hébergeur du site peut conserver des logs techniques (adresse IP, horodatage, pages consultées) à des fins de sécurité et de lutte contre la fraude.</li>
+    </ul>
+
+    <h2>Destinataires des données</h2>
+    <p>
+      Vos données personnelles sont destinées exclusivement à Christophe Brulin en sa qualité de responsable du traitement. Elles ne sont ni vendues, ni louées, ni partagées à des fins commerciales.
+    </p>
+    <p>
+      Certains sous-traitants techniques (Calendly pour la prise de rendez-vous, l'hébergeur du site, le fournisseur de messagerie) peuvent avoir accès à ces données dans la stricte mesure nécessaire à l'exécution de leur prestation. Tous sont tenus par des engagements contractuels de confidentialité et de conformité au RGPD.
+    </p>
+
+    <h2>Transferts hors Union européenne</h2>
+    <p>
+      Calendly est une société américaine. Lors de l'utilisation du module de prise de rendez-vous, vos données peuvent être transférées aux États-Unis. Ce transfert est encadré par les clauses contractuelles types de la Commission européenne et/ou l'adhésion de Calendly au Data Privacy Framework UE-États-Unis.
+    </p>
+
+    <h2>Vos droits</h2>
+    <p>
+      Conformément au RGPD, vous disposez des droits suivants sur vos données personnelles&nbsp;:
+    </p>
+    <ul>
+      <li><strong>Droit d'accès</strong> — obtenir une copie des données vous concernant</li>
+      <li><strong>Droit de rectification</strong> — corriger une donnée inexacte ou incomplète</li>
+      <li><strong>Droit à l'effacement</strong> — demander la suppression de vos données</li>
+      <li><strong>Droit à la limitation du traitement</strong> — restreindre temporairement l'utilisation de vos données</li>
+      <li><strong>Droit à la portabilité</strong> — récupérer vos données dans un format structuré</li>
+      <li><strong>Droit d'opposition</strong> — vous opposer au traitement pour motif légitime</li>
+      <li><strong>Droit de retirer votre consentement</strong> à tout moment, sans conséquence sur la licéité des traitements passés</li>
+    </ul>
+    <p>
+      Pour exercer l'un de ces droits, contactez-moi par email à <a href="mailto:contact@christophebrulin.fr">contact@christophebrulin.fr</a>. Une réponse vous sera apportée dans un délai maximum d'un mois.
+    </p>
+
+    <h2>Réclamation auprès de la CNIL</h2>
+    <p>
+      Si vous estimez, après avoir échangé avec moi, que vos droits sur vos données ne sont pas respectés, vous pouvez adresser une réclamation à la Commission Nationale de l'Informatique et des Libertés (CNIL)&nbsp;:
+    </p>
+    <p>
+      <strong>CNIL</strong><br>
+      3 place de Fontenoy — TSA 80715<br>
+      75334 Paris Cedex 07<br>
+      <a href="https://www.cnil.fr" target="_blank" rel="noopener">www.cnil.fr</a>
+    </p>
+
+    <h2>Sécurité</h2>
+    <p>
+      En ma qualité de professionnel spécialisé dans la sécurité de l'information, j'attache une attention particulière à la protection des données que vous me confiez. Les mesures techniques et organisationnelles appropriées sont mises en œuvre pour garantir la confidentialité, l'intégrité et la disponibilité de vos données (chiffrement HTTPS, messagerie professionnelle sécurisée, hébergement dans l'Union européenne dans la mesure du possible, sauvegardes régulières).
+    </p>
+
+    <h2>Évolution de la politique</h2>
+    <p>
+      La présente politique peut être mise à jour à tout moment pour refléter des évolutions légales, techniques ou organisationnelles. La date de dernière mise à jour figure en tête de document. Je vous invite à la consulter régulièrement.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Pour toute question relative à la protection de vos données personnelles&nbsp;: <a href="mailto:contact@christophebrulin.fr">contact@christophebrulin.fr</a>
+    </p>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="15" stroke="#faf7f2" stroke-width="1.5"/>
+          <path d="M10 16l4 4 8-8" stroke="#d4925b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      Christophe Brulin
+    </a>
+    <div>© 2026 · Sécurité de l'information &amp; Conformité · Lyon, France</div>
+    <ul class="footer-links">
+      <li><a href="mentions-legales.html">Mentions légales</a></li>
+      <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

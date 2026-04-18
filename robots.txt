@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Pages légales : accessibles mais pas à promouvoir dans les résultats
+Disallow: /mentions-legales.html
+Disallow: /politique-confidentialite.html
+
+# Sitemap
+Sitemap: https://christophebrulin.fr/sitemap.xml

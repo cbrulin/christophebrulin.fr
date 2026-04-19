@@ -1122,7 +1122,7 @@ section {
 
 .about-portrait {
   aspect-ratio: 4/5;
-  background: linear-gradient(160deg, var(--ink) 0%, var(--ink-soft) 60%, var(--copper-dark) 100%);
+  background: var(--ink);
   border-radius: var(--radius);
   position: relative;
   overflow: hidden;
@@ -1130,11 +1130,31 @@ section {
   align-items: flex-end;
   padding: 32px;
   color: var(--paper);
+  box-shadow: 0 24px 60px rgba(15, 26, 46, 0.18), 0 10px 24px rgba(15, 26, 46, 0.12);
+}
+
+.about-portrait-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  z-index: 0;
+}
+
+.about-portrait::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(15, 26, 46, 0.2) 70%, rgba(15, 26, 46, 0.85) 100%);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .about-portrait-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .about-portrait-name {
@@ -2097,6 +2117,23 @@ section {
     <div class="about-inner">
       <div class="about-visual reveal">
         <div class="about-portrait">
+          <picture>
+            <source 
+              type="image/webp"
+              srcset="portrait-mobile.webp 680w, portrait-desktop.webp 900w"
+              sizes="(max-width: 640px) 340px, (max-width: 960px) 420px, 500px">
+            <source
+              type="image/jpeg"
+              srcset="portrait-mobile.jpg 680w, portrait-desktop.jpg 900w"
+              sizes="(max-width: 640px) 340px, (max-width: 960px) 420px, 500px">
+            <img 
+              src="portrait-desktop.jpg" 
+              alt="Christophe Brulin, consultant en sécurité de l'information et conformité, auditeur ISO 27001 certifié AFNOR, basé à Lyon"
+              class="about-portrait-img"
+              loading="lazy"
+              width="900" 
+              height="1125">
+          </picture>
           <div class="about-portrait-content">
             <div class="about-portrait-name">Christophe Brulin</div>
             <div class="about-portrait-role">Consultant sécurité & conformité · Lyon</div>
